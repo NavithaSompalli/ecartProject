@@ -24,4 +24,32 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page. 
+
+
+1. Angular keeps the component & view in sync using templates, data binding and change detection etc. All of them are bypassed when we update the DOM directly.
+2. The DOM manipulation works only in browsers. You will not be able to use your app in other platforms like web workers, servers for server-side rendering, desktop or mobile apps etc. where threr is no browser.
+3. The DOM APS's does not sanitize the data. Hence it is possible to inject a script, thereby, opening our app an easy target for the XSS injection attacks.
+
+
+Renderer2 : allows us to manipulate the DOM without accessing the DOM elements directly, by provind a layer of abstraction between the DOM element and the component code.
+
+@HostListner : 
+
+The @HostListner decorator listens to a DOM event on the host element and it reacts to that event by executing an event handler method.
+
+@HostBinding: 
+
+The @HostBinding decorator binds a host elements property to a property of a directive or a component class.
+
+Property Binding vs @HostBinding: 
+
+Creating a conditional Attribute directive: 
+
+
+
+
+
+
+
+

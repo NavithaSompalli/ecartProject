@@ -1,8 +1,29 @@
 <app-search></app-search>
 <app-filter></app-filter>
 <div class="ekart--products--container">
-    <app-product *ngFor = 'let prod of products' [product] = "prod" ></app-product>
+    <app-product *ngFor = 'let prod of products' [product] = "prod"  ></app-product>
+</div>
+
+<div class="ekart-featured-products">
+    <div class="ekart-featured-product-heading">
+        <h1>Latest Arrival in popular branch</h1>
+       
+    </div>
+    <app-featured-branch>
+        <h3 class="title">New Arrivals in Nike</h3>
+        <button class = "call-to-action" appHover>Show New Arrivals in Nike</button>
+    </app-featured-branch>
+    <app-featured-branch>
+        <h3 class="title">New Arrivals in Adidas</h3>
+        <button class = "call-to-action" appHover>Show New Arrivals in Nike</button>
+    </app-featured-branch>
+    <app-featured-branch>
+        <h3 class="title">New Arrivals in Reeboot</h3>
+        <button class = "call-to-action" appHover>Show New Arrivals in Nike</button> <!--here appHover is directive that we are binding @HostBinding decorator to the targeted dom-->
+    </app-featured-branch>
 
 </div>
+
+
 
 

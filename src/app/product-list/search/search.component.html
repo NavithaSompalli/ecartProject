@@ -7,3 +7,7 @@
     <button [ngClass]="{'btn': 'true', 'btn-search':'searchText', 'btn-seacrh-disabled':!searchText}" [disabled] = "!searchText" >Search</button>
 </div>
 <div class="ekart-search-result-for"><p><strong>Search result for:</strong> {{searchText}}</p></div>
+
+<!--false, '', null, undefined, 0 these are falsy values
+The ngClass directive is used to set a css class dynamically on an html element based on a given typescript expression. its change the behavior or look of an html element
+-->

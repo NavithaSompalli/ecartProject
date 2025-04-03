@@ -1,0 +1,8 @@
+<div class="ekart-featured-product-item" appClass [display] = "{'app-container': true}">
+   <ng-content select=".title"></ng-content> <!--we want display elements between the selectors we need to use ng-content directive-->
+    <p class = "description">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500rs.
+    </p>
+    <ng-content select=".call-to-action"></ng-content>
+</div>

@@ -1,2 +1,22 @@
-<app-header></app-header>
-<app-product-list ></app-product-list>
+<app-header>This is top header</app-header> <!--whenever we place the content between the selector that content will not be render-->
+<app-product-list ></app-product-list> 
+
+<!--basically ng-template is used for to define a template and we need to tell when to render the template by using ngTemplateOutlet directive. it is a structual directive-->
+<!--<ng-template #myTemplate>
+    <p>ng template Variables</p>
+</ng-template>
+
+<ng-container *ngTemplateOutlet = "myTemplate"></ng-container> ngTemplateOutlet can add any element: use : when we want ot use multiple structural directives-->
+
+
+<!--We cann't assign elements else condition to ng-container so we need change the else block stmt to ng-template
+<ng-container *ngIf = "toggle; else toggleOff">
+    <p>The toggle is on.</p>
+</ng-container>
+<ng-template #toggleOff>
+    <p>The toggle is Off.</p>
+</ng-template>
+
+<button (click) = "onToggle()">Toggle</button>
+-->
+

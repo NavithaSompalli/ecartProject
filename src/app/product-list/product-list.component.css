@@ -75,3 +75,28 @@
     box-shadow: 10px 10px 18px #cccccc;
     transform: scale(1.05);
 }
+
+
+.ekart-featured-products{
+    background-color: #282828;
+    padding: 20px 10px;
+    display: flex;
+}
+
+.ekart-featured-product-heading{
+    width:320px;
+    margin: 10px 10px;
+    padding: 20px 30px;
+    color: #fff;
+}
+
+.call-to-action{
+    background-color: #282828;
+    color: #fff;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.title, .call-to-action{
+    margin: 10px 0px;
+}
